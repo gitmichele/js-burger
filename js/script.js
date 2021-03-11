@@ -6,6 +6,8 @@ calcBtn.addEventListener('click', function(){
 
     // variabile che richiama contenuto input burgerName
     var burgerName = document.getElementById('burgerName').value;
+    // costo base panino
+    var totalPrice = 10;
     
     // controllo che sia stato inserito del testo nell'input
     if (burgerName == ''){
@@ -15,8 +17,7 @@ calcBtn.addEventListener('click', function(){
 
     // variabile che richiama tutti i checkbox
     var checkboxList = document.getElementsByClassName('whichIngr');
-    // costo panino di partenza
-    var totalPrice = 10;
+
 
     // vado a cercare i checbox attivi
     for (var i=0; i<checkboxList.length; i++){
@@ -53,9 +54,32 @@ calcBtn.addEventListener('click', function(){
         }
     }
 
+    // stampo il nome del panino nel footer
+    var changeFooterWrite = document.getElementById('changeFooterWrite');
+    var burgerNameFooter = document.getElementById('burgerNameFooter');
+    changeFooterWrite.innerHTML = 'Your price for ';
+    burgerNameFooter.innerHTML = burgerName;
+    burgerNameFooter.style.textTransform = 'uppercase'
+
     // stampo il prezzo finale nel footer
     var yourPrice = document.getElementById('yourPrice');
     yourPrice.innerHTML = totalPrice;
-
-
 });
+
+// checkbox si attivano/disattivano cliccando su qualsiasi componente dei vari li#
+var listObj = document.getElementsByTagName('li');
+
+for (var i=0; i<listObj.length; i++){
+
+    listObj[i].addEventListener('click', function() {
+
+        // this mi posiziona all'interno del li su cui clicco
+        // .children seleziona i tag figli
+        // [1] seleziona il tag figlio al secondo posto cioe il checkbox
+        var clickCheck = this.children[1];
+        
+        // on click, se il checkbox.checked ha la spunta allora la toglie
+        // e viceversa
+        clickCheck.checked = !clickCheck.checked;
+    });
+}

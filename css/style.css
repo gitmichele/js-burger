@@ -9,6 +9,10 @@ body{
     background-color: wheat;
 }
 
+a{
+    color: #fff;
+}
+
 .container{
     width: 80%;
 }
@@ -26,6 +30,11 @@ main{
     background-color: #fff;
     height: calc(100vh - 325px);
     overflow: auto;
+}
+
+#ingredients li{
+    cursor: pointer;
+    width: max-content;
 }
 
 #ingredients img{
