@@ -1,0 +1,31 @@
+/* REGOLE GENERALI */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: wheat;
+}
+
+.container{
+    width: 80%;
+}
+
+/* DEBUG */
+header{
+    height: 175px;
+    background-color: sandybrown;
+}
+
+main{
+    background-color: #fff;
+    height: calc(100vh - 325px);
+    overflow: auto;
+}
+
+footer{
+    height: 150px;
+    background-color: salmon;
+}
