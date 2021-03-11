@@ -10,28 +10,35 @@
 </head>
 <body>
     
+    <!-- CONTAINER PAGINA -->
     <div class="container">
 
+            <!-- HEADER -->
         <header>
             <h1>Create your Burger</h1>
         </header>
 
+        <!-- MAIN -->
         <main>
+            <!-- NAME SECTION -->
             <section id="name">
+                <!-- input for name burger -->
                 <input id="burgerName" name="burgerName" type="text" placeholder="Burger name">            
             </section>
 
+            <!-- INGREDIENTS SECION -->
             <section id="ingredients">
+                <!-- list for ingredients -->
                 <ul>
                     <li>
                         <img src="img/cheese.svg" alt="">
-                        <input type="checkbox" data-price="1">
+                        <input type="checkbox" data-price="2">
                         Cheese
                     </li>
 
                     <li>
                         <img src="img/fried-egg.svg" alt="">
-                        <input type="checkbox" data-price="1">
+                        <input type="checkbox" data-price="3">
                         Egg
                     </li>
 
@@ -43,7 +50,7 @@
 
                     <li>
                         <img src="img/tomato.svg" alt="">
-                        <input type="checkbox" data-price="1">
+                        <input type="checkbox" data-price="2">
                         Tomato
                     </li>
 
@@ -61,16 +68,22 @@
                 </ul>
             </section>
 
+            <!-- COUPON SECTION -->
             <section id="coupon">
+                <!-- coupon input label -->
                 <label for="couponInput">Discount coupon</label>
+                <!-- coupon input -->
                 <input name="couponInput" type="text" placeholder="Coupon">
             </section>
 
+            <!-- CALCULATE SECTION -->
             <section id="calculate">
-                <button id="calculateButton">Calculate</button>
+                <!-- calculate button -->
+                <button id="calcBtn">Calculate</button>
             </section>
         </main>
 
+        <!-- FOOTER -->
         <footer>
             <div>
                 Your Price
@@ -79,6 +92,7 @@
                 <span>
                     &euro;
                 </span>
+                <!-- print calc price -->
                 <span>
 
                 </span>
