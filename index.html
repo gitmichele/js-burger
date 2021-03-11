@@ -13,23 +13,76 @@
     <div class="container">
 
         <header>
+            <h1>Create your Burger</h1>
         </header>
 
         <main>
             <section id="name">
+                <input id="burgerName" name="burgerName" type="text" placeholder="Burger name">            
             </section>
 
             <section id="ingredients">
+                <ul>
+                    <li>
+                        <img src="img/cheese.svg" alt="">
+                        <input type="checkbox" data-price="1">
+                        Cheese
+                    </li>
+
+                    <li>
+                        <img src="img/fried-egg.svg" alt="">
+                        <input type="checkbox" data-price="1">
+                        Egg
+                    </li>
+
+                    <li>
+                        <img src="img/mustard.svg" alt="">
+                        <input type="checkbox" data-price="1">
+                        Mustard
+                    </li>
+
+                    <li>
+                        <img src="img/tomato.svg" alt="">
+                        <input type="checkbox" data-price="1">
+                        Tomato
+                    </li>
+
+                    <li>
+                        <img src="img/lettuce.svg" alt="">
+                        <input type="checkbox" data-price="1">
+                        Lettuce
+                    </li>
+
+                    <li>
+                        <img src="img/ketchup.svg" alt="">
+                        <input type="checkbox" data-price="1">
+                        Ketchup
+                    </li>
+                </ul>
             </section>
 
             <section id="coupon">
+                <label for="couponInput">Discount coupon</label>
+                <input name="couponInput" type="text" placeholder="Coupon">
             </section>
 
             <section id="calculate">
+                <button id="calculateButton">Calculate</button>
             </section>
         </main>
 
         <footer>
+            <div>
+                Your Price
+            </div>
+            <div>
+                <span>
+                    &euro;
+                </span>
+                <span>
+
+                </span>
+            </div>
         </footer>
 
     </div>
