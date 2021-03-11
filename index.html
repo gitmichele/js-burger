@@ -20,67 +20,76 @@
 
         <!-- MAIN -->
         <main>
-            <!-- NAME SECTION -->
-            <section id="name">
-                <!-- input for name burger -->
-                <input id="burgerName" name="burgerName" type="text" placeholder="Burger name">            
-            </section>
-
-            <!-- INGREDIENTS SECION -->
-            <section id="ingredients">
-                <!-- list for ingredients -->
-                <ul>
-                    <li>
-                        <img src="img/cheese.svg" alt="">
-                        <input class="whichIngr" type="checkbox" name="cheese" data-cost="2">
-                        Cheese
-                    </li>
-
-                    <li>
-                        <img src="img/fried-egg.svg" alt="">
-                        <input class="whichIngr" type="checkbox" name="egg" data-cost="3">
-                        Egg
-                    </li>
-
-                    <li>
-                        <img src="img/mustard.svg" alt="">
-                        <input class="whichIngr" type="checkbox" name="mustard" data-cost="1">
-                        Mustard
-                    </li>
-
-                    <li>
-                        <img src="img/tomato.svg" alt="">
-                        <input class="whichIngr" type="checkbox" name="tomato" data-cost="2">
-                        Tomato
-                    </li>
-
-                    <li>
-                        <img src="img/lettuce.svg" alt="">
-                        <input class="whichIngr" type="checkbox" name="lettuce" data-cost="1">
-                        Lettuce
-                    </li>
-
-                    <li>
-                        <img src="img/ketchup.svg" alt="">
-                        <input class="whichIngr" type="checkbox" name="ketchup" data-cost="1">
-                        Ketchup
-                    </li>
-                </ul>
-            </section>
-
-            <!-- COUPON SECTION -->
-            <section id="coupon">
-                <!-- coupon input label -->
-                <label for="couponInput">Discount coupon</label>
-                <!-- coupon input -->
-                <input id="couponInput" name="couponInput" type="text" placeholder="Coupon">
-            </section>
-
-            <!-- CALCULATE SECTION -->
-            <section id="calculate">
-                <!-- calculate button -->
-                <button id="calcBtn">Calculate</button>
-            </section>
+           <div class="mainContainer">
+                <!-- NAME SECTION -->
+                <section id="name">
+                    <!-- input for name burger -->
+                    <input id="burgerName" name="burgerName" type="text" placeholder="Name your burger">
+                </section>
+                
+                <!-- INGREDIENTS SECION -->
+                <section id="ingredients">
+                    <h2>Ingredients</h2>
+                    <!-- list for ingredients -->
+                    <ul>
+                        <li>
+                            <img src="img/cheese.svg" alt="">
+                            Cheese
+                            <input class="whichIngr" type="checkbox" name="cheese" data-cost="2">
+                            <span>Add</span>
+                        </li>
+                
+                        <li>
+                            <img src="img/fried-egg.svg" alt="">
+                            Egg
+                            <input class="whichIngr" type="checkbox" name="egg" data-cost="3">
+                            <span>Add</span>
+                        </li>
+                
+                        <li>
+                            <img src="img/mustard.svg" alt="">
+                            Mustard
+                            <input class="whichIngr" type="checkbox" name="mustard" data-cost="1">
+                            <span>Add</span>
+                        </li>
+                
+                        <li>
+                            <img src="img/tomato.svg" alt="">
+                            Tomato
+                            <input class="whichIngr" type="checkbox" name="tomato" data-cost="2">
+                            <span>Add</span>
+                        </li>
+                
+                        <li>
+                            <img src="img/lettuce.svg" alt="">
+                            Lettuce
+                            <input class="whichIngr" type="checkbox" name="lettuce" data-cost="1">
+                            <span>Add</span>
+                        </li>
+                
+                        <li>
+                            <img src="img/ketchup.svg" alt="">
+                            Ketchup
+                            <input class="whichIngr" type="checkbox" name="ketchup" data-cost="1">
+                            <span>Add</span>
+                        </li>
+                    </ul>
+                </section>
+                
+                <!-- COUPON SECTION -->
+                <section id="coupon">
+                    <!-- coupon input label -->
+                    <label for="couponInput">Discount coupon</label>
+                    <!-- coupon input -->
+                    <input id="couponInput" name="couponInput" type="text" placeholder="Coupon">
+                </section>
+                
+                <!-- CALCULATE SECTION -->
+                <section id="calculate">
+                    <!-- calculate button -->
+                    <button id="calcBtn">Calculate</button>
+                </section>
+           </div>
         </main>
 
         <!-- FOOTER -->
