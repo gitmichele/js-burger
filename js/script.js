@@ -32,7 +32,28 @@ calcBtn.addEventListener('click', function(){
         }
     }
 
-    // stampo il prezzo nel footer
+    // array coupon sconto
+    var couponList = [
+        'ASDC123D23',
+        'FINF23F323',
+        '394FRE90RI'
+    ]
+    // var coupon input
+    var couponInput = document.getElementById('couponInput').value;
+
+    // controllo se input coupon corrisponde a uno dei coupon della lista
+    for (i=0; i<couponList.length; i++){
+
+        if (couponInput == couponList[i]){
+
+            // sconto del 20%
+            var discount = totalPrice * .2;
+            // tolgo lo sconto dal prezzo final
+            totalPrice -= discount;
+        }
+    }
+
+    // stampo il prezzo finale nel footer
     var yourPrice = document.getElementById('yourPrice');
     yourPrice.innerHTML = totalPrice;
 
